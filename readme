@@ -1,0 +1,22 @@
+Clone the repository or create a new directory for your project:
+
+mkdir task_management_api
+cd task_management_api
+Create a virtual environment:
+
+python -m venv venv
+Activate the virtual environment:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\env\Scripts\activate.ps1
+
+Install the required dependencies:
+
+pip install fastapi[all] sqlalchemy
+Create a new file named main.py and copy the provided code into it.
+
+Running the API
+To run the API, use the following command:
+
+uvicorn main:app --reload
+The API will be available at http://localhost:8000.
